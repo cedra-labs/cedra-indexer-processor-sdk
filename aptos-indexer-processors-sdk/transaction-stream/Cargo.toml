@@ -1,5 +1,5 @@
 [package]
-name = "aptos-indexer-transaction-stream"
+name = "cedra-indexer-transaction-stream"
 version = "0.1.0"
 
 # Workspace inherited keys
@@ -14,7 +14,7 @@ rust-version = { workspace = true }
 
 [dependencies]
 anyhow = { workspace = true }
-aptos-moving-average = { workspace = true }
+cedra-moving-average = { workspace = true }
 aptos-protos = { workspace = true }
 aptos-transaction-filter = { workspace = true }
 chrono = { workspace = true }

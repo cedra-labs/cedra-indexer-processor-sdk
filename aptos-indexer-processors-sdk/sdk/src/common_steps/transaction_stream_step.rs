@@ -4,7 +4,7 @@ use crate::{
     utils::errors::ProcessorError,
 };
 use anyhow::Result;
-use aptos_indexer_transaction_stream::{
+use cedra_indexer_transaction_stream::{
     TransactionStream as TransactionStreamInternal, TransactionStreamConfig,
 };
 use aptos_protos::transaction::v1::Transaction;

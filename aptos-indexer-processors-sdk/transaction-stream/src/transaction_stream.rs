@@ -3,7 +3,7 @@ use crate::{
     utils::{additional_headers::AdditionalHeaders, time::timestamp_to_iso},
 };
 use anyhow::{anyhow, Result};
-use aptos_moving_average::MovingAverage;
+use cedra_moving_average::MovingAverage;
 use aptos_protos::{
     indexer::v1::{raw_data_client::RawDataClient, GetTransactionsRequest, TransactionsResponse},
     transaction::v1::Transaction,

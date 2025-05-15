@@ -1,5 +1,5 @@
 [package]
-name = "aptos-indexer-processor-sdk"
+name = "cedra-indexer-processor-sdk"
 version = "0.1.0"
 
 # Workspace inherited keys
@@ -14,7 +14,7 @@ rust-version = { workspace = true }
 [dependencies]
 ahash = { workspace = true }
 anyhow = { workspace = true }
-aptos-indexer-transaction-stream = { workspace = true }
+cedra-indexer-transaction-stream = { workspace = true }
 aptos-protos = { workspace = true }
 async-trait = { workspace = true }
 autometrics = { workspace = true }
