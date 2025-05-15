@@ -1,6 +1,6 @@
 use super::basic_processor_step::BasicProcessorStep;
+use cedra_indexer_transaction_stream::TransactionStreamConfig,
 use crate::{
-    cedra_indexer_transaction_stream::TransactionStreamConfig,
     builder::ProcessorBuilder,
     common_steps::{
         TransactionStreamStep, VersionTrackerStep, DEFAULT_UPDATE_PROCESSOR_STATUS_SECS,
