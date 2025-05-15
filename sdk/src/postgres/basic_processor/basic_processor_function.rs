@@ -1,5 +1,5 @@
 use super::basic_processor_step::BasicProcessorStep;
-use cedra_indexer_transaction_stream::TransactionStreamConfig,
+use cedra_indexer_transaction_stream::TransactionStreamConfig;
 use crate::{
     builder::ProcessorBuilder,
     common_steps::{
