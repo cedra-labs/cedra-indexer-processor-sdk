@@ -9,13 +9,13 @@ edition = "2021"
 homepage = "https://aptoslabs.com"
 license = "Apache-2.0"
 publish = false
-repository = "https://github.com/aptos-labs/aptos-indexer-processor-sdk"
+repository = "https://github.com/aptos-labs/cedra-indexer-processor-sdk"
 rust-version = "1.78"
 
 [workspace.dependencies]
 postgres-basic-events-example = { path = "postgres-basic-events-example" }
 
-aptos-indexer-processor-sdk = { path = "../aptos-indexer-processors-sdk/sdk", features = [
+cedra-indexer-processor-sdk = { path = "../aptos-indexer-processors-sdk/sdk", features = [
     "postgres_full",
 ] }
 anyhow = "1.0.86"

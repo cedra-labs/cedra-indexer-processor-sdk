@@ -13,8 +13,8 @@ The Aptos Indexer SDK works by modeling each processor as a graph of independent
 To your `Cargo.toml` , add
 
 ```yaml
-aptos-indexer-processor-sdk = { git = "https://github.com/aptos-labs/aptos-indexer-processor-sdk.git", rev = "{COMMIT_HASH}" }
-aptos-indexer-processor-sdk-server-framework = { git = "https://github.com/aptos-labs/aptos-indexer-processor-sdk.git", rev = "{COMMIT_HASH}" }
+cedra-indexer-processor-sdk = { git = "https://github.com/aptos-labs/cedra-indexer-processor-sdk.git", rev = "{COMMIT_HASH}" }
+cedra-indexer-processor-sdk-server-framework = { git = "https://github.com/aptos-labs/cedra-indexer-processor-sdk.git", rev = "{COMMIT_HASH}" }
 ```
 
 # Get started
