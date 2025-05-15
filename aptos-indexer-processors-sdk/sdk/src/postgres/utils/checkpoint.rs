@@ -1,6 +1,6 @@
 use super::database::{execute_with_better_error, execute_with_better_error_conn, ArcDbPool};
 use crate::{
-    aptos_indexer_transaction_stream::{utils::time::parse_timestamp, TransactionStreamConfig},
+    cedra_indexer_transaction_stream::{utils::time::parse_timestamp, TransactionStreamConfig},
     common_steps::ProcessorStatusSaver,
     postgres::{
         models::{

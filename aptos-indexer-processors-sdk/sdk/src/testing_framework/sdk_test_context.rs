@@ -1,6 +1,6 @@
 use super::mock_grpc::MockGrpcServer;
 use crate::{
-    aptos_indexer_transaction_stream::TransactionStreamConfig,
+    cedra_indexer_transaction_stream::TransactionStreamConfig,
     traits::processor_trait::ProcessorTrait,
 };
 use anyhow::Context;
