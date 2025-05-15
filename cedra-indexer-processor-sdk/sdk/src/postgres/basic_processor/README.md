@@ -4,9 +4,9 @@ Utility function that lets you create a Postgres processor. It works by running 
 
 ## How to use
 1. Install Postgres and Diesel CLI
-2. Add the `aptos-indexer-processor-sdk` crate with the `postgres_full` feature in the `[dependencies]` section of your `Config.toml`:
+2. Add the `cedra-indexer-processor-sdk` crate with the `postgres_full` feature in the `[dependencies]` section of your `Config.toml`:
 ```
-aptos-indexer-processor-sdk = { git = "https://github.com/aptos-labs/aptos-indexer-processor-sdk.git", rev = "{COMMIT_HASH}", features = ["postgres_full"] }
+cedra-indexer-processor-sdk = { git = "https://github.com/aptos-labs/cedra-indexer-processor-sdk.git", rev = "{COMMIT_HASH}", features = ["postgres_full"] }
 ```
 3. Setup Diesel and define your DB migrations. 
 4. In `main.rs`, call the `process` function with your indexing logic. You'll need to implement this part:
@@ -25,7 +25,7 @@ The `process` function is an abstraction around a regular SDK processor.
 
 It runs your db migrations, validates the chain id, connects to Transaction Stream, tracks the last successful version, and processes transactions using your custom indexing logic. 
 
-See [`postgres-basic-events-example`](https://github.com/aptos-labs/aptos-indexer-processor-sdk/tree/main/examples/postgres-basic-events-example) for an example on how to use this function to create a simple processor that writes events to Postgres. 
+See [`postgres-basic-events-example`](https://github.com/aptos-labs/cedra-indexer-processor-sdk/tree/main/examples/postgres-basic-events-example) for an example on how to use this function to create a simple processor that writes events to Postgres. 
 
 5. Construct a `config.yaml` file with this example:
 ```
