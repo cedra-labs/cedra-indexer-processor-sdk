@@ -120,7 +120,7 @@ checksum = "e16d2d3311acee920a9eb8d33b8cbc1787ce4a264e85f964c2404b969bdcd487"
 [[package]]
 name = "aptos-profiler"
 version = "0.1.0"
-source = "git+https://github.com/cedra-labs/cedra.git?rev=2dd9c73b27fdcbe78c7391fd43c9a5d00b93e686#2dd9c73b27fdcbe78c7391fd43c9a5d00b93e686"
+source = "git+https://github.com/cedra-labs/cedra.git"
 dependencies = [
  "anyhow",
  "backtrace",
@@ -144,7 +144,7 @@ dependencies = [
 [[package]]
 name = "aptos-system-utils"
 version = "0.1.0"
-source = "git+https://github.com/cedra-labs/cedra.git?rev=2dd9c73b27fdcbe78c7391fd43c9a5d00b93e686#2dd9c73b27fdcbe78c7391fd43c9a5d00b93e686"
+source = "git+https://github.com/cedra-labs/cedra.git"
 dependencies = [
  "anyhow",
  "aptos-profiler",
