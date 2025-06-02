@@ -22,9 +22,9 @@ use tracing::{error, info, warn};
 const GRPC_API_GATEWAY_API_KEY_HEADER: &str = "authorization";
 /// GRPC request metadata key for the request name. This is used to identify the
 /// data destination.
-const GRPC_REQUEST_NAME_HEADER: &str = "x-aptos-request-name";
+const GRPC_REQUEST_NAME_HEADER: &str = "x-cedra-request-name";
 /// GRPC connection id
-const GRPC_CONNECTION_ID: &str = "x-aptos-connection-id";
+const GRPC_CONNECTION_ID: &str = "x-cedra-connection-id";
 /// 256MB
 pub const MAX_RESPONSE_SIZE: usize = 1024 * 1024 * 256;
 
