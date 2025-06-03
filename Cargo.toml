@@ -27,9 +27,9 @@ sample = { path = "sample" }
 
 ahash = { version = "0.8.7", features = ["serde"] }
 anyhow = "1.0.98"
-aptos-protos = { git = "https://github.com/cedra-labs/cedra.git",  branch = "build-own-cli", rev = "96bd9b3d300aaeab590c3662c8920c4d24708c3b" } # rev = "2dd9c73b27fdcbe78c7391fd43c9a5d00b93e686" 
-aptos-system-utils = { git = "https://github.com/cedra-labs/cedra.git", branch = "build-own-cli", rev = "96bd9b3d300aaeab590c3662c8920c4d24708c3b" } # rev = "2dd9c73b27fdcbe78c7391fd43c9a5d00b93e686"
-aptos-transaction-filter = { git = "https://github.com/cedra-labs/cedra.git", branch = "build-own-cli", rev = "96bd9b3d300aaeab590c3662c8920c4d24708c3b" } # rev = "2dd9c73b27fdcbe78c7391fd43c9a5d00b93e686"
+aptos-protos = { git = "https://github.com/cedra-labs/cedra.git",  branch = "build-own-cli" } # rev = "2dd9c73b27fdcbe78c7391fd43c9a5d00b93e686" 
+aptos-system-utils = { git = "https://github.com/cedra-labs/cedra.git", branch = "build-own-cli" } # rev = "2dd9c73b27fdcbe78c7391fd43c9a5d00b93e686"
+aptos-transaction-filter = { git = "https://github.com/cedra-labs/cedra.git", branch = "build-own-cli" } # rev = "2dd9c73b27fdcbe78c7391fd43c9a5d00b93e686"
 async-trait = "0.1.80"
 autometrics = { version = "1.0.1", features = ["prometheus-exporter"] }
 axum = "0.7.5"
