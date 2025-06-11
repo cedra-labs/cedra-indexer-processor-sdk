@@ -8,11 +8,11 @@ use once_cell::sync::Lazy;
 /// Type string for CedraCoin.
 pub const CEDRA_COIN_TYPE_STR: &str = "0x1::cedra_coin::CedraCoin";
 
-pub static APT_METADATA_ADDRESS_RAW: Lazy<[u8; 32]> = Lazy::new(|| {
+pub static CEDRA_METADATA_ADDRESS_RAW: Lazy<[u8; 32]> = Lazy::new(|| {
     let mut addr = [0u8; 32];
     addr[31] = 10u8;
     addr
 });
 
-pub static APT_METADATA_ADDRESS_HEX: Lazy<String> =
-    Lazy::new(|| format!("0x{}", hex::encode(*APT_METADATA_ADDRESS_RAW)));
+pub static CEDRA_METADATA_ADDRESS_HEX: Lazy<String> =
+    Lazy::new(|| format!("0x{}", hex::encode(*CEDRA_METADATA_ADDRESS_RAW)));
