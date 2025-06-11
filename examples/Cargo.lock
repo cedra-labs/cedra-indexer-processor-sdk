@@ -124,8 +124,8 @@ dependencies = [
  "ahash",
  "anyhow",
  "cedra-indexer-transaction-stream",
- "aptos-protos",
- "aptos-system-utils",
+ "cedra-protos",
+ "cedra-system-utils",
  "async-trait",
  "autometrics",
  "axum",
@@ -173,9 +173,9 @@ name = "cedra-indexer-transaction-stream"
 version = "0.1.0"
 dependencies = [
  "anyhow",
- "aptos-moving-average",
- "aptos-protos",
- "aptos-transaction-filter",
+ "cedra-moving-average",
+ "cedra-protos",
+ "cedra-transaction-filter",
  "chrono",
  "futures-util",
  "once_cell",
@@ -190,16 +190,16 @@ dependencies = [
 ]
 
 [[package]]
-name = "aptos-moving-average"
+name = "cedra-moving-average"
 version = "0.1.0"
 dependencies = [
  "chrono",
 ]
 
 [[package]]
-name = "aptos-profiler"
+name = "cedra-profiler"
 version = "0.1.0"
-source = "git+https://github.com/aptos-labs/aptos-core.git?rev=2dd9c73b27fdcbe78c7391fd43c9a5d00b93e686#2dd9c73b27fdcbe78c7391fd43c9a5d00b93e686"
+source = "git+https://github.com/cedra-labs/cedra-core.git?rev=2dd9c73b27fdcbe78c7391fd43c9a5d00b93e686#2dd9c73b27fdcbe78c7391fd43c9a5d00b93e686"
 dependencies = [
  "anyhow",
  "backtrace",
@@ -210,9 +210,9 @@ dependencies = [
 ]
 
 [[package]]
-name = "aptos-protos"
+name = "cedra-protos"
 version = "1.3.1"
-source = "git+https://github.com/aptos-labs/aptos-core.git?rev=2dd9c73b27fdcbe78c7391fd43c9a5d00b93e686#2dd9c73b27fdcbe78c7391fd43c9a5d00b93e686"
+source = "git+https://github.com/cedra-labs/cedra-core.git?rev=2dd9c73b27fdcbe78c7391fd43c9a5d00b93e686#2dd9c73b27fdcbe78c7391fd43c9a5d00b93e686"
 dependencies = [
  "pbjson",
  "prost",
@@ -221,12 +221,12 @@ dependencies = [
 ]
 
 [[package]]
-name = "aptos-system-utils"
+name = "cedra-system-utils"
 version = "0.1.0"
-source = "git+https://github.com/aptos-labs/aptos-core.git?rev=2dd9c73b27fdcbe78c7391fd43c9a5d00b93e686#2dd9c73b27fdcbe78c7391fd43c9a5d00b93e686"
+source = "git+https://github.com/cedra-labs/cedra-core.git?rev=2dd9c73b27fdcbe78c7391fd43c9a5d00b93e686#2dd9c73b27fdcbe78c7391fd43c9a5d00b93e686"
 dependencies = [
  "anyhow",
- "aptos-profiler",
+ "cedra-profiler",
  "async-mutex",
  "http 0.2.12",
  "hyper 0.14.32",
@@ -241,12 +241,12 @@ dependencies = [
 ]
 
 [[package]]
-name = "aptos-transaction-filter"
+name = "cedra-transaction-filter"
 version = "0.1.0"
-source = "git+https://github.com/aptos-labs/aptos-core.git?rev=2dd9c73b27fdcbe78c7391fd43c9a5d00b93e686#2dd9c73b27fdcbe78c7391fd43c9a5d00b93e686"
+source = "git+https://github.com/cedra-labs/cedra-core.git?rev=2dd9c73b27fdcbe78c7391fd43c9a5d00b93e686#2dd9c73b27fdcbe78c7391fd43c9a5d00b93e686"
 dependencies = [
  "anyhow",
- "aptos-protos",
+ "cedra-protos",
  "derivative",
  "derive_builder",
  "memchr",
@@ -454,7 +454,7 @@ dependencies = [
 [[package]]
 name = "bcs"
 version = "0.1.4"
-source = "git+https://github.com/aptos-labs/bcs.git?rev=d31fab9d81748e2594be5cd5cdf845786a30562d#d31fab9d81748e2594be5cd5cdf845786a30562d"
+source = "git+https://github.com/cedra-labs/bcs.git?rev=d31fab9d81748e2594be5cd5cdf845786a30562d#d31fab9d81748e2594be5cd5cdf845786a30562d"
 dependencies = [
  "serde",
  "thiserror",

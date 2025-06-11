@@ -4,7 +4,7 @@ use crate::{
     traits::processor_trait::ProcessorTrait,
 };
 use anyhow::Context;
-use aptos_protos::{indexer::v1::TransactionsResponse, transaction::v1::Transaction};
+use cedra_protos::{indexer::v1::TransactionsResponse, transaction::v1::Transaction};
 use serde_json::{to_string_pretty, Error as SerdeError, Value};
 use std::{
     collections::HashMap,

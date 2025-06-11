@@ -1,9 +1,9 @@
-// Copyright © Aptos Foundation
+// Copyright © Cedra Foundation
 // SPDX-License-Identifier: Apache-2.0
 
 //! Helpers related to dealing with dates and times.
 
-use aptos_protos::util::timestamp::Timestamp;
+use cedra_protos::util::timestamp::Timestamp;
 use chrono::Utc;
 
 /// 9999-12-31 23:59:59, this is the max supported by Google BigQuery.

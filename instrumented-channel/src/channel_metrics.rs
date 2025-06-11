@@ -7,7 +7,7 @@ use prometheus_client::{
 };
 use std::sync::atomic::AtomicU64;
 
-pub const METRICS_PREFIX: &str = "aptos_procsdk_channel_";
+pub const METRICS_PREFIX: &str = "cedra_procsdk_channel_";
 
 pub fn init_channel_metrics_registry(registry: &mut Registry) {
     registry.register(

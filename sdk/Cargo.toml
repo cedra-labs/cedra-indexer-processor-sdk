@@ -15,7 +15,7 @@ rust-version = { workspace = true }
 ahash = { workspace = true }
 anyhow = { workspace = true }
 cedra-indexer-transaction-stream = { workspace = true }
-aptos-protos = { workspace = true }
+cedra-protos = { workspace = true }
 async-trait = { workspace = true }
 autometrics = { workspace = true }
 axum = { workspace = true }
@@ -62,7 +62,7 @@ tracing-subscriber = { workspace = true }
 url = { workspace = true }
 
 [target.'cfg(target_os = "linux")'.dependencies]
-aptos-system-utils = { workspace = true }
+cedra-system-utils = { workspace = true }
 
 [features]
 postgres_partial = [

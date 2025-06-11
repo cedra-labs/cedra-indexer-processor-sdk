@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# This script checks if the crates in both examples and aptos-indexer-processors-sdk
+# This script checks if the crates in both examples and cedra-indexer-processors-sdk
 # depend on external deps that they shouldn't. We run this in CI to make sure we don't
 # accidentally reintroduce deps that would make the crates unusable for the CLI.
 #
@@ -12,13 +12,13 @@
 # Run this from the root directory of the project.
 
 # Make sure we're in the root directory
-if [ ! -d "examples" ] || [ ! -d "aptos-indexer-processors-sdk" ]; then
+if [ ! -d "examples" ] || [ ! -d "cedra-indexer-processors-sdk" ]; then
     echo "Please run this script from the root directory of the project"
     exit 1
 fi
 
 # We only run the check on the SDK since that's the only crate used by the CLI. 
-cd "aptos-indexer-processors-sdk"
+cd "cedra-indexer-processors-sdk"
 
 declare -a deps=("pq-sys" "openssl-sys")
 

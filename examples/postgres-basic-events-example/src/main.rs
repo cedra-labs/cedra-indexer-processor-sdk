@@ -1,7 +1,7 @@
 use crate::events_model::EventModel;
 use anyhow::Result;
-use aptos_indexer_processor_sdk::{
-    aptos_protos::transaction::v1::transaction::TxnData,
+use cedra_indexer_processor_sdk::{
+    cedra_protos::transaction::v1::transaction::TxnData,
     postgres::{
         basic_processor::process,
         utils::database::{execute_in_chunks, MAX_DIESEL_PARAM_SIZE},

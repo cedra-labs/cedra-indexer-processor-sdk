@@ -4,18 +4,18 @@ resolver = "2"
 members = ["postgres-basic-events-example"]
 
 [workspace.package]
-authors = ["Aptos Labs <opensource@aptoslabs.com>"]
+authors = ["Cedra Labs <opensource@cedralabs.com>"]
 edition = "2021"
-homepage = "https://aptoslabs.com"
+homepage = "https://cedralabs.com"
 license = "Apache-2.0"
 publish = false
-repository = "https://github.com/aptos-labs/cedra-indexer-processor-sdk"
+repository = "https://github.com/cedra-labs/cedra-indexer-processor-sdk"
 rust-version = "1.78"
 
 [workspace.dependencies]
 postgres-basic-events-example = { path = "postgres-basic-events-example" }
 
-cedra-indexer-processor-sdk = { path = "../aptos-indexer-processors-sdk/sdk", features = [
+cedra-indexer-processor-sdk = { path = "../cedra-indexer-processors-sdk/sdk", features = [
     "postgres_full",
 ] }
 anyhow = "1.0.86"
@@ -30,7 +30,7 @@ diesel = { version = "=2.2.0", features = [
 diesel_migrations = { version = "2.1.0", features = ["postgres"] }
 field_count = "0.1.1"
 rayon = "1.10.0"
-sample = { path = "../aptos-indexer-processors-sdk/sample" }
+sample = { path = "../cedra-indexer-processors-sdk/sample" }
 serde = { version = "1.0.193", features = ["derive", "rc"] }
 serde_json = { version = "1.0.81", features = ["preserve_order"] }
 tokio = { version = "1.37.0", features = ["full"] }

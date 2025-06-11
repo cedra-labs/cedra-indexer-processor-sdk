@@ -4,12 +4,12 @@ use crate::{
 };
 use anyhow::{anyhow, Result};
 use cedra_moving_average::MovingAverage;
-use aptos_protos::{
+use cedra_protos::{
     indexer::v1::{raw_data_client::RawDataClient, GetTransactionsRequest, TransactionsResponse},
     transaction::v1::Transaction,
     util::timestamp::Timestamp,
 };
-use aptos_transaction_filter::BooleanTransactionFilter;
+use cedra_transaction_filter::BooleanTransactionFilter;
 use futures_util::StreamExt;
 use prost::Message;
 use sample::{sample, SampleRate};

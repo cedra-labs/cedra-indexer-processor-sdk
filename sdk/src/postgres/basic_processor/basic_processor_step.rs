@@ -5,7 +5,7 @@ use crate::{
     utils::errors::ProcessorError,
 };
 use anyhow::Result;
-use aptos_protos::transaction::v1::Transaction;
+use cedra_protos::transaction::v1::Transaction;
 use async_trait::async_trait;
 
 // Basic process step that runs a process function on each transaction

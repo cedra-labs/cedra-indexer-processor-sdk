@@ -1,4 +1,4 @@
-// Copyright © Aptos Foundation
+// Copyright © Cedra Foundation
 // SPDX-License-Identifier: Apache-2.0
 
 //! Helpers for extracting data from transactions.
@@ -7,7 +7,7 @@ use super::{
     convert::{deserialize_from_string, standardize_address, truncate_str},
     property_map::{PropertyMap, TokenObjectPropertyMap},
 };
-use aptos_protos::transaction::v1::{
+use cedra_protos::transaction::v1::{
     multisig_transaction_payload::Payload as MultisigPayloadType,
     transaction_payload::Payload as PayloadType, write_set::WriteSet as WriteSetType,
     EntryFunctionId, EntryFunctionPayload, MoveScriptBytecode, MoveType, ScriptPayload,
@@ -350,8 +350,8 @@ mod tests {
         };
         let val = serde_json::to_string(&test_struct).unwrap();
         let d: TypeInfoMock = serde_json::from_str(val.as_str()).unwrap();
-        assert_eq!(d.module_name.as_str(), "aptos_coin");
-        assert_eq!(d.struct_name.as_str(), "AptosCoin");
+        assert_eq!(d.module_name.as_str(), "cedra_coin");
+        assert_eq!(d.struct_name.as_str(), "CedraCoin");
     }
 
     #[test]

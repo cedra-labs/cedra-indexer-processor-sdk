@@ -1,4 +1,4 @@
-use aptos_protos::indexer::v1::{
+use cedra_protos::indexer::v1::{
     raw_data_server::{RawData, RawDataServer},
     GetTransactionsRequest, ProcessedRange, TransactionsResponse,
 };

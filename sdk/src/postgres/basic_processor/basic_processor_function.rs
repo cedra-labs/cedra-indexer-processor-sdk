@@ -23,7 +23,7 @@ use crate::{
     utils::{chain_id_check::check_or_update_chain_id, errors::ProcessorError},
 };
 use anyhow::Result;
-use aptos_protos::transaction::v1::Transaction;
+use cedra_protos::transaction::v1::Transaction;
 use clap::Parser;
 use diesel_migrations::EmbeddedMigrations;
 use serde::{Deserialize, Serialize};

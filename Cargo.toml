@@ -10,9 +10,9 @@ members = [
 ]
 
 [workspace.package]
-authors = ["Aptos Labs <opensource@aptoslabs.com>"]
+authors = ["Cedra Labs <opensource@cedralabs.com>"]
 edition = "2021"
-homepage = "https://aptoslabs.com"
+homepage = "https://cedralabs.com"
 license = "Apache-2.0"
 publish = false
 repository = "https://github.com/cedra-labs/cedra-indexer-processor-sdk"
@@ -27,9 +27,9 @@ sample = { path = "sample" }
 
 ahash = { version = "0.8.7", features = ["serde"] }
 anyhow = "1.0.98"
-aptos-protos = { git = "https://github.com/cedra-labs/cedra.git",  rev = "f6e266175c32dc53c7a6d79aeef5582cc7a4df12" } # rev = "2dd9c73b27fdcbe78c7391fd43c9a5d00b93e686" 
-aptos-system-utils = { git = "https://github.com/cedra-labs/cedra.git", rev = "f6e266175c32dc53c7a6d79aeef5582cc7a4df12" } # rev = "2dd9c73b27fdcbe78c7391fd43c9a5d00b93e686"
-aptos-transaction-filter = { git = "https://github.com/cedra-labs/cedra.git", rev = "f6e266175c32dc53c7a6d79aeef5582cc7a4df12" } # rev = "2dd9c73b27fdcbe78c7391fd43c9a5d00b93e686"
+cedra-protos = { git = "https://github.com/cedra-labs/cedra-network.git",  rev = "e8b7b18c6b07f5338af169246ada024a8a5ca4f6" }  
+cedra-system-utils = { git = "https://github.com/cedra-labs/cedra-network.git", rev = "e8b7b18c6b07f5338af169246ada024a8a5ca4f6" } 
+cedra-transaction-filter = { git = "https://github.com/cedra-labs/cedra-network.git", rev = "e8b7b18c6b07f5338af169246ada024a8a5ca4f6" } 
 async-trait = "0.1.80"
 autometrics = { version = "1.0.1", features = ["prometheus-exporter"] }
 axum = "0.7.5"
@@ -65,7 +65,7 @@ indexmap = { version = "2.7.0", features = ["serde"] }
 itertools = "0.13.0"
 
 # Locking this because newer versions of kanal are using the unstable feature error_in_core, which
-# will break the Aptos CLI. 
+# will break the Cedra CLI. 
 kanal = "=0.1.0-pre8"
 lazy_static = "1.4.0"
 mockall = "0.12.1"

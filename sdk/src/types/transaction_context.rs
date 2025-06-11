@@ -60,7 +60,7 @@ impl<T> PartialEq for TransactionContext<T> {
 pub struct TransactionMetadata {
     pub start_version: u64,
     pub end_version: u64,
-    pub start_transaction_timestamp: Option<aptos_protos::util::timestamp::Timestamp>,
-    pub end_transaction_timestamp: Option<aptos_protos::util::timestamp::Timestamp>,
+    pub start_transaction_timestamp: Option<cedra_protos::util::timestamp::Timestamp>,
+    pub end_transaction_timestamp: Option<cedra_protos::util::timestamp::Timestamp>,
     pub total_size_in_bytes: u64,
 }

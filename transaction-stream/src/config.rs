@@ -1,5 +1,5 @@
 use crate::utils::additional_headers::AdditionalHeaders;
-use aptos_transaction_filter::BooleanTransactionFilter;
+use cedra_transaction_filter::BooleanTransactionFilter;
 use serde::{Deserialize, Serialize};
 use std::time::Duration;
 use url::Url;

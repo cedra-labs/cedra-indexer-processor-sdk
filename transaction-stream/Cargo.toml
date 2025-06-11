@@ -15,8 +15,8 @@ rust-version = { workspace = true }
 [dependencies]
 anyhow = { workspace = true }
 cedra-moving-average = { workspace = true }
-aptos-protos = { workspace = true }
-aptos-transaction-filter = { workspace = true }
+cedra-protos = { workspace = true }
+cedra-transaction-filter = { workspace = true }
 chrono = { workspace = true }
 futures-util = { workspace = true }
 once_cell = { workspace = true }

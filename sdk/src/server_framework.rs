@@ -1,4 +1,4 @@
-// Copyright © Aptos Foundation
+// Copyright © Cedra Foundation
 
 use crate::{
     instrumented_channel::channel_metrics::init_channel_metrics_registry,
@@ -6,7 +6,7 @@ use crate::{
 };
 use anyhow::{Context, Result};
 #[cfg(target_os = "linux")]
-use aptos_system_utils::profiling::start_cpu_profiling;
+use cedra_system_utils::profiling::start_cpu_profiling;
 use autometrics::settings::AutometricsSettings;
 use axum::{http::StatusCode, response::IntoResponse, routing::get, Router};
 use backtrace::Backtrace;
@@ -144,7 +144,7 @@ fn handle_panic(panic_info: &PanicInfo<'_>) {
     let crash_info = toml::to_string_pretty(&info).unwrap();
     error!("{}", crash_info);
     // TODO / HACK ALARM: Write crash info synchronously via eprintln! to ensure it is written before the process exits which error! doesn't guarantee.
-    // This is a workaround until https://github.com/aptos-labs/aptos-core/issues/2038 is resolved.
+    // This is a workaround until https://github.com/cedra-labs/cedra-core/issues/2038 is resolved.
     eprintln!("{}", crash_info);
     // Kill the process
     process::exit(12);

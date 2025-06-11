@@ -2,7 +2,7 @@
 health_check_port: 8085
 server_config:
   transaction_stream_config:
-    indexer_grpc_data_service_address: "https://grpc.mainnet.aptoslabs.com:443"
+    indexer_grpc_data_service_address: "https://grpc.mainnet.cedralabs.com:443"
     auth_token: "AUTH_TOKEN"
     request_name_header: "events-processor"
     starting_version: 0
