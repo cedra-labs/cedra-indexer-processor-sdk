@@ -79,7 +79,7 @@ rayon = "1.10.0"
 serde = { version = "1.0.193", features = ["derive", "rc"] }
 serde_json = { version = "1.0.81", features = ["preserve_order"] }
 serde_yaml = "0.8.24"
-sha2 = "0.9.3"
+sha2 = "0.10.9"
 strum = { version = "0.24.1", features = ["derive"] }
 tempfile = "3.3.0"
 testcontainers = "0.20.1"
